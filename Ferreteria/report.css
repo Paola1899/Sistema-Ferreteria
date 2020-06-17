@@ -1,0 +1,61 @@
+body {
+    background-color: #fafafa;
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+.menubar h2{
+    padding: 7px;
+}
+
+h1,h2,h3,h4,h5,h6 {
+    font-weight: 400;	
+}
+
+#header {
+    border-bottom: 5px solid #37474F;
+    color: #37474F;
+    margin-bottom: 2.5rem;
+    padding: 1rem 0;
+}
+
+#revenue-tag {
+    font-weight: inherit !important;
+    border-radius: 0px !important;
+}
+
+.card {
+    border: 0rem;
+    border-radius: 0rem;
+}
+
+.card-header {
+    background-color: #37474F;
+    border-radius: 0 !important;
+    color:	white;
+    margin-bottom: 0;
+    padding:	1rem;
+}
+
+.card-block {
+    border: 1px solid #cccccc;	
+}
+
+.shadow {
+    box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.14),
+                            0 1px 18px 0 rgba(0, 0, 0, 0.12),
+                            0 3px 5px -1px rgba(0, 0, 0, 0.2);
+}
+
+#revenue-column-chart, #products-revenue-pie-chart, #orders-spline-chart {
+    height: 300px;
+    width: 100%;
+}
+
+.container {
+    width: 90%;
+    position: absolute;
+    left: 7%;
+    top: 10%;
+    z-index: -200;
+}

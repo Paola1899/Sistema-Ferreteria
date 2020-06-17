@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="icon" type="image/png" href="icons/admin.png"/>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Baloo+Da+2:400,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="user.css">
+    <title>Administración</title>
+</head>
+<body>
+    <div class="menubar">
+        <h2>Ferreteria Bendición de Dios</h2>
+        <nav>
+            <ul>
+                <li>
+                    <a href=""><i class="fas fa-user-tie"></i>Administrador</a>
+                    <ul>
+                        <li>
+                            <a href="">
+                                <img src="icons/hombre.png" alt="">
+                                <span>Perfil</span>
+                            </a>
+                        </li>
+                        <li><a href="index.html"><i class="fas fa-sign-out-alt"></i>Salir</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+    </div>
+    <div class="area"></div><nav class="main-menu">
+        <ul>
+            <li>
+                <a href="proveedores.html#buscar">
+                    <i class="fas fa-store fa-2x"></i>
+                    <span class="nav-text">
+                        Proveedores
+                    </span>
+                </a>
+              
+            </li>
+            <li class="has-subnav">
+                <a href="inventario.html#nivel">
+                    <i class="fas fa-boxes fa-2x"></i>
+                    <span class="nav-text">
+                        Productos
+                    </span>
+                </a>
+                
+            </li>
+            <li class="has-subnav">
+                <a href="report.html">
+                    <i class="fas fa-chart-line fa-2x"></i>
+                    <span class="nav-text">
+                        Reportes
+                    </span>
+                </a>
+                
+            </li>
+            <li class="has-subnav">
+                <a href="#buscar">
+                    <i class="fas fa-users fa-2x" style="color: green;"></i>
+                    <span class="nav-text" style="color: green;">
+                        Gestión Usuarios
+                    </span>
+                </a>
+                
+            </li>
+    </nav>
+    <div class="contenido">
+        <ul class="tabs">
+            <li>
+                <a id="link-buscar" href="#buscar" onclick="inicio(this)">
+                    <span>Buscar</span>
+                </a>
+            </li>
+            <li>
+                <a id="link-nuevo" href="#nuevo" onclick="inicio(this)">
+                    <span>Nuevo Usuario</span>
+                </a>
+            </li>
+            <li>
+                <a id="link-modificar" href="#modificar" onclick="inicio(this)">
+                    <span>Modificar Usuario</span>
+                </a>
+            </li>
+        </ul>
+        <div id="buscar" class="panel paquete1">
+            <h2><strong>Miembros del Staff</strong></h2>
+            <a href="#nuevo" onclick="inicio2()"><button><i class="fas fa-address-card"></i>Agregar Nuevo Usuario</button></a>
+            <table>
+                <tr>
+                    <th>Nombre</th>
+                    <th>Puesto</th>
+                    <th></th>
+                    <th></th>
+                </tr>
+                <tr>
+                    <td>Keyling Brigitte Rojas Gomez</td>
+                    <td>Administrador</td>
+                    <td><button><i class="fas fa-users-cog"></i>Modificar</button></td>
+                    <td><button><i class="fas fa-trash"></i>Desactivar</button></td>
+                </tr>
+                <tr>
+                    <td>Veronica Paola Arroliga Garcia</td>
+                    <td>Cajero</td>
+                    <td><button><i class="fas fa-users-cog"></i>Modificar</button></td>
+                    <td><button><i class="fas fa-trash"></i>Desactivar</button></td>
+                </tr>
+                <tr>
+                    <td>Julio Moises Moreira Benavides</td>
+                    <td>Vendedor</td>
+                    <td><button><i class="fas fa-users-cog"></i>Modificar</button></td>
+                    <td><button><i class="fas fa-trash"></i>Desactivar</button></td>
+                </tr>
+                <tr>
+                    <td>Marcos Antonio Jalinas Hernandez</td>
+                    <td>Bodeguero</td>
+                    <td><button><i class="fas fa-users-cog"></i>Modificar</button></td>
+                    <td><button><i class="fas fa-trash"></i>Desactivar</button></td>
+                </tr>
+                <tr>
+                    <td>Eli Josue Vallejos Toruño</td>
+                    <td>Jefe de Ventas</td>
+                    <td><button><i class="fas fa-users-cog"></i>Modificar</button></td>
+                    <td><button><i class="fas fa-trash"></i>Desactivar</button></td>
+                </tr>
+            </table>
+
+        </div>
+        <div id="nuevo" class="panel paquete2">
+            <form action="">
+                <h2><strong>Datos del Nuevo Miembro</strong></h2>
+                <label for="">Nombres:</label><br>
+                <input type="text" value="" placeholder="Primer Nombre" required>
+                <input type="text" value="" placeholder="Segundo Nombre" required><br>
+                <label for="">Apellidos:</label><br>
+                <input type="text" value="" placeholder="Primer Apellido" required>
+                <input type="text" value="" placeholder="Segundo Apellido" required><br>
+                <label for="">Correo electronico:</label><br>
+                <input type="email" name="" id="" placeholder="Email" required><br>
+                <label for="">Puesto:</label><br>
+                <div class="select">
+                    <select name="" id="" required>
+                        <option value="0" selected disabled>Puesto de Trabajo:</option>
+                        <option value="1">Administrador</option>
+                        <option value="2">Jefe de Ventas</option>
+                        <option value="3">Vendedor</option>
+                        <option value="4">Bodeguero</option>
+                        <option value="5">Cajero</option>
+                    </select>
+                </div> <br>
+                <button type="submit"><i class="fas fa-save"></i>Guardar</button>
+                <button><i class="fas fa-angle-right"></i>Cancelar</button><br>
+                <p><i><strong>La contraseña se genera por defecto y solo puede ser modificada por el usuario.</strong></i></p>
+            </form>
+        </div>
+        <div id="modificar" class="panel paquete2">
+            <form action="">
+                <h2><strong>Datos del Miembro</strong></h2>
+                <label for="">ID:</label><br>
+                <input type="text" value="" placeholder="ID de Registro" required>
+                <label for="">Nombres:</label><br>
+                <input type="text" value="" placeholder="Primer Nombre" required>
+                <input type="text" value="" placeholder="Segundo Nombre" required><br>
+                <label for="">Apellidos:</label><br>
+                <input type="text" value="" placeholder="Primer Apellido" required>
+                <input type="text" value="" placeholder="Segundo Apellido" required><br>
+                <label for="">Correo electronico:</label><br>
+                <input type="email" name="" id="" placeholder="Email" required><br>
+                <label for="">Puesto:</label><br>
+                <div class="select">
+                    <select name="" id="" required>
+                        <option value="0" selected disabled>Puesto de Trabajo:</option>
+                        <option value="1">Administrador</option>
+                        <option value="2">Jefe de Ventas</option>
+                        <option value="3">Vendedor</option>
+                        <option value="4">Bodeguero</option>
+                        <option value="5">Cajero</option>
+                    </select>
+                </div> <br>
+                <button type="submit"><i class="fas fa-save"></i>Guardar</button>
+                <button><i class="fas fa-angle-right"></i>Cancelar</button><br>
+                <p><i><strong>La contraseña solo puede ser modificada por el usuario.</strong></i></p>
+            </form>
+        </div>
+    </div>
+</body>
+<script>
+    document.getElementById("link-buscar").style.backgroundColor = "white";
+    document.getElementById("link-buscar").style.color = "black";
+
+    function inicio(elemento){
+        document.getElementById("link-buscar").style.backgroundColor = "gray";
+        document.getElementById("link-modificar").style.backgroundColor = "gray";
+        document.getElementById("link-nuevo").style.backgroundColor = "gray";
+
+        document.getElementById("link-buscar").style.color = "white";
+        document.getElementById("link-modificar").style.color = "white";
+        document.getElementById("link-nuevo").style.color = "white";
+
+        elemento.style.color = "black";
+        elemento.style.backgroundColor = "white";
+    }
+    function inicio2(){
+        document.getElementById("link-buscar").style.backgroundColor = "gray";
+        document.getElementById("link-modificar").style.backgroundColor = "gray";
+        document.getElementById("link-nuevo").style.backgroundColor = "white";
+
+        document.getElementById("link-buscar").style.color = "white";
+        document.getElementById("link-modificar").style.color = "white";
+        document.getElementById("link-nuevo").style.color = "black";
+    }
+</script>
+</html>

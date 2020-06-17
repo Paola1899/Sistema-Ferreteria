@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="icons/error.ico"/>
+    <link href="https://fonts.googleapis.com/css?family=Baloo+Da+2:400,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="cuenta.css">
+    <title>Ferreteria</title>
+</head>
+<body>
+    <div class="padre">
+        <img src="admin.jpg" alt="">
+        <p>Lo sentimos, comuniquese con el Administrador de la Ferreteria para obtener sus credenciales.</p>
+        <button class="boton" onclick="inicio()">Volver</button>
+    </div>
+</body>
+
+<script>
+    function inicio() {
+        window.open("login.html");
+        self.close();
+    }
+</script>
+</html>

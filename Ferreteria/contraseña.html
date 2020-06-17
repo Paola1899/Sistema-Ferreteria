@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="icons/cuenta.ico"/>
+    <link href="https://fonts.googleapis.com/css?family=Baloo+Da+2:400,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="contraseña.css">
+    <title>Recuperación</title>
+</head>
+<body>
+    <div class="padre">
+        <div class="hijo">
+            <img src="rec.jpg" alt="">
+        </div>
+        <div class="hijo t">
+            <h1>Ingrese su correo de recuperación de cuenta:</h1>
+            <input type="email" name="" id="email" placeholder="correo">
+            <button class="boton" onclick="enviar()">Enviar</button>
+            <button class="boton" onclick="volver()">Volver</button>
+        </div>
+    </div>
+</body>
+<script>
+    function enviar() {
+        if(document.getElementById("email").value == ""){
+            document.getElementById("email").style.borderColor = "rgb(255,63,63,0.7)";
+            alert("Campo Vacio");
+        } else {
+            //Esperando Base de Datos
+        }
+    }
+
+    function volver() {
+        window.open("login.html");
+        self.close();
+    }
+</script>
+</html>

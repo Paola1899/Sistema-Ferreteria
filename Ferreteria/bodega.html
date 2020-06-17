@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="icon" type="image/png" href="icons/bodega2.ico"/><link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Baloo+Da+2:400,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/bootstrap/bootstrap4-alpha3.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="inventario.css">
+    <title>Bodega</title>
+</head>
+<body>
+    <div class="menubar">
+        <h2>Ferreteria Bendición de Dios</h2>
+        <nav>
+            <ul>
+                <li>
+                    <a href=""><i class="fas fa-user-tie"></i>Vendedor</a>
+                    <ul>
+                        <li>
+                            <a href="">
+                                <img src="icons/hombre.png" alt="">
+                                <span>Perfil</span>
+                            </a>
+                        </li>
+                        <li><a href="index.html"><i class="fas fa-sign-out-alt"></i>Salir</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+    </div>
+    <div class="area"></div><nav class="main-menu">
+        <ul>
+            <li>
+                <a href="bodega.html#buscar" style="color: green;">
+                    <i class="fas fa-warehouse fa-2x" style="color: green;"></i>
+                    <span class="nav-text">
+                        Ingreso de Compras
+                    </span>
+                </a>
+              
+            </li>
+            <li class="has-subnav">
+                <a href="bodega2.html#buscar">
+                    <i class="fas fa-dolly-flatbed fa-2x"></i>
+                    <span class="nav-text">
+                        Retiro de Bodega
+                    </span>
+                </a>
+                
+            </li>
+    </nav>
+    <div class="contenido">
+        <ul class="tabs">
+            <li>
+                <a id="link-buscar" href="#buscar" onclick="inicio(this)">
+                    <span>Buscar Ingreso</span>
+                </a>
+            </li>
+            <li>
+                <a id="link-nuevo" href="#nuevo" onclick="inicio(this)">
+                    <span>Nuevo Ingreso</span>
+                </a>
+            </li>
+            <li>
+                <a id="link-modificar" href="#modificar" onclick="inicio(this)">
+                    <span>Modificar Ingreso</span>
+                </a>
+            </li>
+        </ul>
+        <div id="buscar" class="panel paquete1">
+            <h2><strong>Buscar Ingreso</strong></h2>
+            <button><i class="fas fa-plus-square"></i>Nuevo Ingreso</button>
+            <table>
+                <tr>
+                    <th>Proveedor</th>
+                    <th>Producto</th>
+                    <th>Cantidad</th>
+                    <th>Precio Compra</th>
+                    <th>Total</th>
+                    <th></th>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td><button><i class="fas fa-tools"></i>Modificar</button></td>
+                    <td><button><i class="fas fa-trash"></i>Eliminar</button></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td><button><i class="fas fa-tools"></i>Modificar</button></td>
+                    <td><button><i class="fas fa-trash"></i>Eliminar</button></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td><button><i class="fas fa-tools"></i>Modificar</button></td>
+                    <td><button><i class="fas fa-trash"></i>Eliminar</button></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td><button><i class="fas fa-tools"></i>Modificar</button></td>
+                    <td><button><i class="fas fa-trash"></i>Eliminar</button></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td><button><i class="fas fa-tools"></i>Modificar</button></td>
+                    <td><button><i class="fas fa-trash"></i>Eliminar</button></td>
+                </tr>
+            </table>
+        </div>
+        <div id="nuevo" class="panel paquete2">
+            <form action="">
+                <h2><strong>Datos Ingreso</strong></h2>
+                <label for="">ID Proveedor:</label><br>
+                <div class="select">
+                    <select name="" id="" required>
+                        <option value="0" disabled selected>Proveedores:</option>
+                        <option value="1">Proveedor1</option>
+                        <option value="2">Proveedor2</option>
+                        <option value="3">Proveedor3</option>
+                        <option value="4">Proveedor4</option>
+                        <option value="5">Proveedor5</option>
+                    </select>
+                </div><br>
+                <label for="">ID Compra:</label><br>
+                <input type="text" placeholder="ID Compra"><br>
+                <label for="">Fecha:</label><br>
+                <input type="date" name="" id="">
+                <table>
+                    <tr>
+                        <th>Producto</th>
+                        <th>Cantidad</th>
+                        <th>Precio</th>
+                        <th>Total</th>
+                        <th></th>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td><button><i class="fas fa-trash"></i>Eliminar</button></td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td><button><i class="fas fa-trash"></i>Eliminar</button></td>
+                    </tr>
+                </table>
+                <button type="submit"><i class="fas fa-save"></i>Guardar</button>
+                <button><i class="fas fa-angle-right"></i>Cancelar</button><br>
+            </form>
+        </div>
+        <div id="modificar" class="panel paquete2">
+            <form action="">
+                <h2><strong>Modificar Ingreso</strong></h2>
+                <label for="">ID Proveedor:</label><br>
+                <div class="select">
+                    <select name="" id="" required>
+                        <option value="0" disabled selected>Proveedores:</option>
+                        <option value="1">Proveedor1</option>
+                        <option value="2">Proveedor2</option>
+                        <option value="3">Proveedor3</option>
+                        <option value="4">Proveedor4</option>
+                        <option value="5">Proveedor5</option>
+                    </select>
+                </div><br>
+                <label for="">ID Compra:</label><br>
+                <input type="text" placeholder="ID Compra" disabled><br>
+                <label for="">Fecha:</label><br>
+                <input type="date" name="" id="">
+                <table>
+                    <tr>
+                        <th>Producto</th>
+                        <th>Cantidad</th>
+                        <th>Precio</th>
+                        <th>Total</th>
+                        <th></th>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td><button><i class="fas fa-trash"></i>Eliminar</button></td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td><button><i class="fas fa-trash"></i>Eliminar</button></td>
+                    </tr>
+                </table>
+                <button type="submit"><i class="fas fa-save"></i>Guardar</button>
+                <button><i class="fas fa-angle-right"></i>Cancelar</button><br>
+            </form>
+        </div>
+    </div>
+</body>
+<script>
+    document.getElementById("link-buscar").style.backgroundColor = "white";
+    document.getElementById("link-buscar").style.color = "black";
+
+    function inicio(elemento){
+        document.getElementById("link-buscar").style.backgroundColor = "gray";
+        document.getElementById("link-modificar").style.backgroundColor = "gray";
+        document.getElementById("link-nuevo").style.backgroundColor = "gray";
+
+        document.getElementById("link-buscar").style.color = "white";
+        document.getElementById("link-modificar").style.color = "white";
+        document.getElementById("link-nuevo").style.color = "white";
+
+        elemento.style.color = "black";
+        elemento.style.backgroundColor = "white";
+    }
+    function inicio2(){
+        document.getElementById("link-buscar").style.backgroundColor = "gray";
+        document.getElementById("link-modificar").style.backgroundColor = "gray";
+        document.getElementById("link-nuevo").style.backgroundColor = "white";
+
+        document.getElementById("link-buscar").style.color = "white";
+        document.getElementById("link-modificar").style.color = "white";
+        document.getElementById("link-nuevo").style.color = "black";
+    }
+</script>
+</html>

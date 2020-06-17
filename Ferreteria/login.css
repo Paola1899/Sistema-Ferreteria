@@ -1,0 +1,55 @@
+.padre {
+    background-color: white;
+    width: 500px;
+    text-align: center;
+    margin: auto;
+    align-items: center;
+    font-family: 'Baloo Da 2', cursive;
+  }
+
+.usuario {
+    width: 150px;
+}
+
+.opciones {
+    text-align: left;
+    margin-left: 80px;
+    color: gray;
+}
+
+.opciones li {
+    margin-bottom: 5px;
+}
+
+.opciones a {
+    color: green;
+}
+
+.opciones li a:hover{
+    color: rgb(0, 68, 68);
+}
+
+input {
+    background: whitesmoke;
+    margin: 5px;
+    width: 300px;
+    height: 30px;
+    border-color: transparent;
+    border-radius: 5px;
+    font-size: 13px;
+}
+
+.boton {
+    background-color: green;
+    border-color: transparent;
+    color: white;
+    border-radius: 25px;
+    font-size: 16px;
+    margin: 5px;
+    width: 300px;
+    height: 30px;
+}
+
+.boton:hover {
+    background-color: rgb(0, 68, 68);
+}

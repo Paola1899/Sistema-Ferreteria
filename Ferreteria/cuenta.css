@@ -1,0 +1,26 @@
+.padre {
+    text-align: center;
+    margin: auto;
+    align-items: center;
+    font-family: 'Baloo Da 2', cursive;
+}
+
+p {
+    font-size: 20px;
+    font-style: oblique;
+}
+
+.boton {
+    background-color: green;
+    border-color: transparent;
+    color: white;
+    border-radius: 25px;
+    font-size: 16px;
+    margin: 5px;
+    width: 100px;
+    height: 30px;
+}
+
+.boton:hover {
+    background-color: rgb(0, 68, 68);
+}
